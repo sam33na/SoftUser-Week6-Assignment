@@ -13,6 +13,7 @@ class RegisterFragment : Fragment() {
     private lateinit var etName: EditText
     private lateinit var etAge: EditText
     private lateinit var etAddress: EditText
+    private lateinit var etUrl: EditText
     private lateinit var radGrp: RadioGroup
     private lateinit var male: RadioButton
     private lateinit var female: RadioButton
@@ -30,6 +31,7 @@ class RegisterFragment : Fragment() {
         etName=view.findViewById(R.id.etName)
         etAddress=view.findViewById(R.id.etAddress)
         etAge=view.findViewById(R.id.etAge)
+        etUrl=view.findViewById(R.id.etUrl)
         radGrp=view.findViewById(R.id.radioGrp)
         male=view.findViewById(R.id.radMale)
         female=view.findViewById(R.id.radFemale)
@@ -49,7 +51,8 @@ class RegisterFragment : Fragment() {
             var name= etName.text.toString()
             var address= etAddress.text.toString()
             var age= etAge.text.toString().toInt()
-            var Student=Students(name, address, age, gender)
+            var url= etUrl.text.toString()
+            var Student=Students(name, address, age, gender, url)
             list.add(Student)
             Toast.makeText(context,"Student added", Toast.LENGTH_LONG).show()
         }

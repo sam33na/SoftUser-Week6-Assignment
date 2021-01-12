@@ -1,6 +1,5 @@
 package com.sr.studentregister.Adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,10 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.sr.studentregister.Model.Students
 import com.sr.studentregister.R
+import com.sr.studentregister.ui.home.HomeFragment
 
 class StudentAdapter(
     val lstStd:ArrayList<Students>,
-    val context:Context
+    val context: HomeFragment
 ):RecyclerView.Adapter<StudentAdapter.StudentViewHolder>()
 {
     class StudentViewHolder(view: View):RecyclerView.ViewHolder(view)

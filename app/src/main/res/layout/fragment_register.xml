@@ -74,6 +74,15 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="20dp"
+        android:hint="Enter img Url"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:hint="Enter address"
         android:textSize="20sp" />
 
@@ -85,7 +94,6 @@
         android:layout_marginTop="35dp"
         android:layout_marginRight="75dp"
         android:background="#A9D3F4"
-        android:padding="17dp"
         android:text="Submit"
         android:textColor="@color/white"
         android:textSize="20dp" />
