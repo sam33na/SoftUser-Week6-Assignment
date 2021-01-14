@@ -1,4 +1,4 @@
-package com.sr.studentregister.ui.about
+package com.sr.studentregister.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,14 +1,23 @@
 package com.sr.studentregister
 
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.RecyclerView
 
 class HomeActivity : AppCompatActivity() {
+    private  lateinit var recyclerView:RecyclerView
+    private lateinit var tvAge:TextView
+    private lateinit var tvAddress:TextView
+    private lateinit var tvName:TextView
+    private lateinit var tvGender:TextView
+    private lateinit var imgDp:ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,5 +34,13 @@ class HomeActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        recyclerView=findViewById(R.id.recyclerView)
+        tvAge=findViewById(R.id.tvAge)
+        tvAddress=findViewById(R.id.tvAddress)
+        tvName=findViewById(R.id.tvName)
+        tvGender=findViewById(R.id.tvGender)
+        imgDp=findViewById(R.id.imgDp)
+
     }
 }

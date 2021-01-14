@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.sr.studentregister.ui.home.HomeFragment"
+        android:name="com.sr.studentregister.fragments.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.sr.studentregister.ui.register.RegisterFragment"
+        android:name="com.sr.studentregister.fragments.RegisterFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_register" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.sr.studentregister.ui.about.AboutFragment"
+        android:name="com.sr.studentregister.fragments.AboutFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_about" />
 </navigation>

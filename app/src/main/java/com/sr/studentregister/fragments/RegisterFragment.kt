@@ -1,4 +1,4 @@
-package com.sr.studentregister.ui.register
+package com.sr.studentregister.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -55,6 +55,7 @@ class RegisterFragment : Fragment() {
             var Student=Students(name, address, age, gender, url)
             list.add(Student)
             Toast.makeText(context,"Student added", Toast.LENGTH_LONG).show()
+
         }
         return view
     }
