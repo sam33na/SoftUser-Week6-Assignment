@@ -22,6 +22,19 @@ class MainActivity : AppCompatActivity() {
         login = findViewById(R.id.btnLogin)
 
         login.setOnClickListener {
+            var username=username.text.toString()
+            var password=password.text.toString()
+
+            if(username==usr && password==pw)
+            {
+                Toast.makeText(this,"Login Successfull", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+            }
+            else
+            {
+                Toast.makeText(this, "Invalid loign", Toast.LENGTH_SHORT).show()
+            }
 
         }
     }
