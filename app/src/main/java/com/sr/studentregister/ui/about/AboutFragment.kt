@@ -17,7 +17,7 @@ private lateinit var wbView: WebView
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_about, container, false)\
+        val view = inflater.inflate(R.layout.fragment_about, container, false)
         wbView= view.findViewById(R.id.wbView)
         wbView.loadUrl("https://softwarica.edu.np/")
 
