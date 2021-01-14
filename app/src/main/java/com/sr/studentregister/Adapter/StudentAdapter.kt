@@ -41,7 +41,7 @@ class StudentAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StudentViewHolder {
         val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.student_recycler,parent,false)
+            .inflate(R.layout.student_recycler,parent,false)
         return StudentViewHolder(view)
     }
 
@@ -49,7 +49,7 @@ class StudentAdapter(
 
         val student = lstStudent[position]
         holder.tvName.text = student.stdName
-        holder.tvAge.text = student.stdAge.toString()
+        holder.tvAge.text = student.stdAge
         holder.tvAddress.text = student.stdAddress
         holder.tvGender.text = student.stdGender
 
@@ -59,8 +59,8 @@ class StudentAdapter(
         }
 
         Glide.with(context)
-                .load(student.stdDpUrl)
-                .into(holder.imgDp)
+            .load(student.stdDpUrl)
+            .into(holder.imgDp)
     }
 
     override fun getItemCount(): Int {

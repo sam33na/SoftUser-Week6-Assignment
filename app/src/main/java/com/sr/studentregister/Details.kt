@@ -19,12 +19,12 @@ class Details {
     {
         lstStd.remove(students)
     }
-    public fun setLogib(id:Students?)
+    public fun setLogin(id:Students?)
     {
         println(id)
         login=id
     }
-    public fun getLogib(id:Students?): Students? {
+    public fun getLogin(id:Students?): Students? {
         return login
     }
 

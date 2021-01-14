@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
         login = findViewById(R.id.btnLogin)
 
         login.setOnClickListener {
-            var username=username.text.toString()
-            var password=password.text.toString()
+            var User=username.text.toString()
+            var Pass=password.text.toString()
             nullCheck()
-            if(username==usr && password==pw)
+            if(User==usr && Pass==pw)
             {
                 Toast.makeText(this,"Login Successfull", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, HomeActivity::class.java)
@@ -38,17 +38,21 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    private fun nullCheck()
+    private fun nullCheck():Boolean
     {
+        var check:Boolean=true
         when {
             TextUtils.isEmpty(username.text) -> {
                 username.error = "Please fill username"
                 username.requestFocus()
+                check=false
             }
             TextUtils.isEmpty(password.text) -> {
                 password.error = "Please fill password"
                 password.requestFocus()
+                check=false
             }
         }
+        return check
     }
 }
